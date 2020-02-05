@@ -13,6 +13,12 @@ html, body {
   margin: 0;
 }
 
+@media screen and (max-width: 576px) {
+  html, body {
+    font-size: 0.5rem;
+  }
+}
+
 nav.navbar {
   -webkit-transition: 1s;
   transition: 1s;
@@ -163,7 +169,7 @@ nav.navbar {
 }
 
 #section_skills .carousel-item .IconBar li img {
-  width: 4rem;
+  width: 3rem;
   border-radius: 10px;
   opacity: 0.5;
   background-color: #ececec;

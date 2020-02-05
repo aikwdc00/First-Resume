@@ -3,6 +3,7 @@ $color_blue: #282f44
 $color_gray: #808080 
 $color_black: #121212 
 $color_white: #ececec
+$phone-width: 576px
 // 設置mixin
 @mixin ab_center
   position: absolute
@@ -13,6 +14,10 @@ $color_white: #ececec
 @mixin size($w,$h)
   width: $w
   height: $h
+
+@mixin phone 
+    @media screen and (max-width: $phone-width)
+        @content;
 
 // css架構
 *
@@ -27,7 +32,8 @@ html,body
     text-transform: capitalize
     scroll-behavior: smooth
     margin: 0
-
+    @include phone
+      font-size: 1rem*0.5
 // nav
 nav.navbar
   transition: 1s
@@ -128,6 +134,7 @@ nav.navbar
     border-radius: 50%
     border: solid 1px $color_gray
     z-index: 1
+
 // skills
 skills
 #section_skills
@@ -137,7 +144,7 @@ skills
   & h1
     color: $color_white
   & .carousel-item .IconBar li img
-    width: 4rem
+    width: 3rem
     border-radius: 10px
     opacity: 0.5
     background-color: $color_white
