@@ -1,0 +1,182 @@
+// 定義顏色
+$color_blue: #282f44 
+$color_gray: #808080 
+$color_black: #121212 
+$color_white: #ececec
+// 設置mixin
+@mixin ab_center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  
+@mixin size($w,$h)
+  width: $w
+  height: $h
+
+// css架構
+*
+  font-family: 'Oswald', 'Microsoft JhengHei'
+  padding: 0
+  margin: 0
+// html and body
+html,body
+    overflow-y: auto
+    // font-size: 16px
+    transition: 2s
+    text-transform: capitalize
+    scroll-behavior: smooth
+    margin: 0
+
+// nav
+nav.navbar
+  transition: 1s
+.navbar.navbar-expand-sm.navbar-light.bg-light.fixed-top.mx-auto.navbar-top.border-bottom
+  background-color: transparent !important
+  & a
+    color: $color_white !important
+    transition: 0.5s !important
+    padding: 0 10px
+    &:hover
+      color: $color_black !important
+      background-color: $color_white
+      border-radius: 10px
+    //   padding: 0 5px
+.navbar-collapse ul li a
+    text-align: center
+
+// header
+#header_index
+  @include size(100%,100%)
+.carousel-caption
+    position: absolute
+[data-col="1"]
+    top: 20%
+    left: -10%
+[data-col="2"]
+    top: 50%
+    left: -20%
+[data-col="3"]
+    top: 30%
+    right: -5%
+
+// explore
+.explore
+  @include ab_center
+  // width: 120px
+  // height: 120px
+  // line-height: 120px 
+  font-size: 1.2rem
+  top: 80%
+  color: $color_white
+  font-weight: 800
+  text-align: center
+  transition: 2s
+  z-index: 10
+  animation: arror 2s both infinite
+  opacity: 0
+  text-shadow: 0 0 10px 10px
+  // &:before
+  //     content: ''
+  //     display: block
+  //     background-color: $color_blue
+  //     border-radius: 50%
+  //     @include size(120px,120px)
+  //     position: absolute
+  //     top: -25%
+  //     left: -20%
+  //     z-index: -1
+  &:hover
+    text-decoration: none
+  &:after
+    content: '\21E3'
+    display: block
+    transform: scale(1.2)
+  &:after:hover
+    text-decoration: none
+  &.at_top
+    opacity: 1
+    color: $color_white
+@keyframes arror
+  0%,100%
+      bottom: -10px
+  50%
+      bottom: 20px
+
+// about
+.timeline-section
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 3px
+    left: 0.5rem
+    width: 3px
+    height: 100%
+    border: solid 1px $color_gray
+    background-color: $color_gray
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0.5rem
+    transform: translateX(-0.25rem)
+    width: 10px
+    height: 10px
+    background-color: $color_gray
+    border-radius: 50%
+    border: solid 1px $color_gray
+    z-index: 1
+// skills
+skills
+#section_skills
+  background-image: url('https://img.technews.tw/wp-content/uploads/2019/02/13155041/markus-spiske-1171520-unsplash-1-e1550044275519.jpg')
+  background-attachment: fixed
+  background-position: center
+  & h1
+    color: $color_white
+  & .carousel-item .IconBar li img
+    width: 4rem
+    border-radius: 10px
+    opacity: 0.5
+    background-color: $color_white
+    padding: 0.5rem
+    transition: 0.5s
+    &:hover
+      opacity: 1
+
+// info
+.info
+  top: 50%
+  right: -2rem
+  transform: translateY(-50%)
+  z-index: 100
+  &  ul li
+    width: 5rem
+    right: 0rem
+    transition: 0.5s
+    &:hover
+      right: 1rem
+    & a
+      color: $color_black
+      font-size: 1.5rem
+// footer
+#section_footer
+  background-color: $color_black
+  & ul li a
+    color: $color_white
+    font-size: 1.5rem
+    transition: 0.5s
+    top: 0
+    &:hover
+      top: 10px
+      font-size: 2rem
+// top
+.top-up
+  background-color: $color_white
+  font-size: 1.5rem
+  @include size(1rem,1rem)
+  border-radius: 50%
+  top: 90%
+  right: 5%
