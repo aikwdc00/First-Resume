@@ -14,9 +14,11 @@
 
 <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top navbar-top mx-auto border-bottom">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top navbar-top mx-auto">
         <div class="container">
-            <a class="navbar-brand d-block mx-auto" href="index.html">Navbar</a>
+            <a class="navbar-brand mx-auto w-75 p-0" href="index.html">
+                <img class="brand-logo"src="image/logo/logo-black.png" width="" height="" alt="">
+            </a>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -32,6 +34,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#section_projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_footer">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -83,24 +88,34 @@
                 <div class="col-sm-12 text-center pt-5">
                     <h1 calss="h1 aboutTitle">About me</h1>
                 </div>
-                <div class="col-md-6 pt-3">
-                    <p class="px-3 text-justify">
-                        　　Hi，我是Fred，目前在努力專研著網頁開發技術，本身職業與Coding較無相關，因緣際會下，認識同事、朋友皆有在網頁設計、開發，慢慢去了解信息，過了一陣子後，發現自己對這有興趣，由於技術變化太快，日新月異，便投入了時間自學。
-                    </p>
-                </div>
-                <div class="col-md-6 pt-3">
-                    <div class="row flex-column">
-                        <div class="col-xs-12 timeline-section pl-3">
-                            <h4 class="px-3">experience</h4>
-                            <p class="px-3 text-justify">Capital Power Global Limited Inc.</p>
-                            <p class="px-3 text-justify">富邦媒體科技有限公司</p>
-                        </div>
-                        <div class="col-xs-12 timeline-section pl-3">
-                            <h4 class="px-3">Education</h4>
-                            <p class="px-3 text-justify">Lunghwa University</p>
-                        </div>
+                <p class="text-justify p-3 m-0">
+                    Hi，我是Fred，因興趣而自行學習及摸索網頁約1年時間，於2019.12起辭去工作，投入前端工程師轉職之路。對於前端技術及網頁設計充滿熱忱，目前在努力自學及專研著網頁開發技術，包括收集產品要求和解決方案，創建流程和模型以及增強設計以吸引用戶。期望加入有完整開發流程的團隊。
+                </p>
+                <div class="col-md-6 py-3">
+                    <h3 class="pb-2 text-center">experience</h3>
+                    <div class="col-xs-12 timeline-section pl-3 experiencePanel" >
+                        <!-- <h4 class="pl-3">Capital Power Global Limited Inc.</h4>
+                        <h5 class="pl-3">產品專員 Product Specialist</h5>
+                        <ul class="pl-3 m-0 pb-3">
+                            <li>進行支付後台管理及向開發部門提出產品優化及後續内容的建議和意見,不斷提升產品競爭力</li>
+                            <li>制定新的支付方式，評估開發的可行性，進行導入並控管時程。</li>
+                            <li>執行支付市場與產品趨勢調查，提供研發部門做為新產品開發的參考。</li>
+                            <li>進行產品QA測試、版本上線前向部門進行培訓之規劃。</li>
+                        </ul> -->
                     </div>
                 </div>
+                <div class="col-md-6 py-3">
+                    <h3 class="pb-2 text-center">Education</h3>
+                    <div class="col-xs-12 timeline-section pl-3">
+                        <h5 class="pl-3">Lunghwa University of Science and Technology</h5>
+                        <ul class="pl-3 m-0 pb-3">
+                            <li>information manage</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav mx-auto Icon-panel pb-3">
+                    <!-- edit here -->
+                </ul>
             </div>
         </div>
 
@@ -108,7 +123,7 @@
         </div>
     </section>
     <!-- skills -->
-    <section class="skills my-5" id="section_skills">
+    <section class="skills py-3" id="section_skills">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
@@ -179,11 +194,14 @@
         </div>
     </section>
     <!-- projects -->
-    <section class="projects" id="section_projects">
+    <section class="projects py-5" id="section_projects">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center py-5">
-                    <h1 calss="">projects</h1>
+                <div class="col-sm-12 text-center">
+                    <h1 calss="h1">projects</h1>
+                </div>
+                <div class="col-12 ProjectPanel">
+                    <!-- edit here -->
                 </div>
             </div>
         </div>
@@ -195,11 +213,19 @@
         </ul>
     </section>
     <!-- footer -->
-    <section class="projects py-5" id="section_footer">
+    <section class="projects py-3" id="section_footer">
         <div class="container">
-            <ul class="nav justify-content-center footer-panel">
+            <ul class="nav justify-content-center Icon-panel py-3">
                 <!-- edit here -->
             </ul>
+            <div class="row justify-content-center contact">
+                <div class="col-12">
+                    <p>Number : +886-927683568</p>
+                    <p>Skype : <span calss="textSize">aikwdc00@hotmail.com</span></p>
+                    <hr>
+                    <p class="copyright">@2020 - All Right Reserved. Designed and Developed by Fred's Resume</p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- top -->

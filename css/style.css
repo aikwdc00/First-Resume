@@ -13,29 +13,43 @@ html, body {
   margin: 0;
 }
 
-@media screen and (max-width: 576px) {
-  html, body {
-    font-size: 0.5rem;
-  }
-}
-
 nav.navbar {
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.navbar.navbar-expand-sm.navbar-light.bg-light.fixed-top.mx-auto.navbar-top.border-bottom {
+.container .navbar-brand {
+  width: 75%;
+}
+
+.container .navbar-brand img {
+  width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .container .navbar-brand img {
+    width: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container .navbar-brand img {
+    width: 3rem;
+  }
+}
+
+.navbar.navbar-expand-sm.navbar-dark.bg-dark.fixed-top.mx-auto.navbar-top {
   background-color: transparent !important;
 }
 
-.navbar.navbar-expand-sm.navbar-light.bg-light.fixed-top.mx-auto.navbar-top.border-bottom a {
-  color: #ececec !important;
+.navbar.navbar-expand-sm.navbar-dark.bg-dark.fixed-top.mx-auto.navbar-top #navbarSupportedContent ul li a {
+  color: #121212 !important;
   -webkit-transition: 0.5s !important;
   transition: 0.5s !important;
   padding: 0 10px;
 }
 
-.navbar.navbar-expand-sm.navbar-light.bg-light.fixed-top.mx-auto.navbar-top.border-bottom a:hover {
+.navbar.navbar-expand-sm.navbar-dark.bg-dark.fixed-top.mx-auto.navbar-top #navbarSupportedContent ul li a:hover {
   color: #121212 !important;
   background-color: #ececec;
   border-radius: 10px;
@@ -127,6 +141,17 @@ nav.navbar {
   }
 }
 
+#section_about .container .row ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section_about .container .row ul li a {
+  color: #121212;
+  font-size: 1.5rem;
+}
+
 .timeline-section {
   position: relative;
 }
@@ -158,6 +183,10 @@ nav.navbar {
   z-index: 1;
 }
 
+.experienceDate {
+  font-size: 0.7rem;
+}
+
 #section_skills {
   background-image: url("https://img.technews.tw/wp-content/uploads/2019/02/13155041/markus-spiske-1171520-unsplash-1-e1550044275519.jpg");
   background-attachment: fixed;
@@ -180,6 +209,10 @@ nav.navbar {
 
 #section_skills .carousel-item .IconBar li img:hover {
   opacity: 1;
+}
+
+.pro-title {
+  max-width: 248px;
 }
 
 .info {
@@ -211,7 +244,8 @@ nav.navbar {
 }
 
 #section_footer ul li a {
-  color: #ececec;
+  color: #ececec !important;
+  border-radius: 50%;
   font-size: 1.5rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -221,6 +255,21 @@ nav.navbar {
 #section_footer ul li a:hover {
   top: 10px;
   font-size: 2rem;
+}
+
+#section_footer .contact .col-12 p {
+  text-align: center;
+  color: #ececec;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+#section_footer .contact .col-12 hr {
+  background-color: #808080;
+}
+
+#section_footer .contact .col-12 .copyright {
+  font-size: 0.7rem;
 }
 
 .top-up {

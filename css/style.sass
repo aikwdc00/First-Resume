@@ -4,6 +4,7 @@ $color_gray: #808080
 $color_black: #121212 
 $color_white: #ececec
 $phone-width: 576px
+$pad-width: 768px
 // 設置mixin
 @mixin ab_center
   position: absolute
@@ -18,7 +19,9 @@ $phone-width: 576px
 @mixin phone 
     @media screen and (max-width: $phone-width)
         @content;
-
+@mixin pad 
+    @media screen and (max-width: $pad-width)
+        @content;
 // css架構
 *
   font-family: 'Oswald', 'Microsoft JhengHei'
@@ -32,15 +35,26 @@ html,body
     text-transform: capitalize
     scroll-behavior: smooth
     margin: 0
-    @include phone
-      font-size: 1rem*0.5
+    // @include pad
+    //   font-size: 1rem*0.7
+    // @include phone
+    //   font-size: 1rem*0.5
+
 // nav
 nav.navbar
   transition: 1s
-.navbar.navbar-expand-sm.navbar-light.bg-light.fixed-top.mx-auto.navbar-top.border-bottom
+.container .navbar-brand
+  width: 75%
+  & img
+    width: 75%
+    @include pad
+      width: 4.5rem
+    @include phone
+      width: 3rem
+.navbar.navbar-expand-sm.navbar-dark.bg-dark.fixed-top.mx-auto.navbar-top
   background-color: transparent !important
-  & a
-    color: $color_white !important
+  & #navbarSupportedContent ul li a
+    color: $color_black !important
     transition: 0.5s !important
     padding: 0 10px
     &:hover
@@ -110,6 +124,14 @@ nav.navbar
       bottom: 20px
 
 // about
+#section_about .container .row ul 
+  ul 
+  list-style-type: none
+  margin: 0
+  padding: 0
+  & li a
+    color: $color_black
+    font-size: 1.5rem
 .timeline-section
   position: relative
   &:before
@@ -134,7 +156,8 @@ nav.navbar
     border-radius: 50%
     border: solid 1px $color_gray
     z-index: 1
-
+.experienceDate
+  font-size: 0.7rem
 // skills
 skills
 #section_skills
@@ -152,7 +175,9 @@ skills
     transition: 0.5s
     &:hover
       opacity: 1
-
+// project
+.pro-title
+  max-width: 248px
 // info
 .info
   top: 50%
@@ -172,13 +197,23 @@ skills
 #section_footer
   background-color: $color_black
   & ul li a
-    color: $color_white
+    color: $color_white !important
+    border-radius: 50%
     font-size: 1.5rem
     transition: 0.5s
     top: 0
     &:hover
       top: 10px
       font-size: 2rem
+  & .contact .col-12 p
+    text-align: center
+    color: $color_white
+    margin: 0
+    text-transform: lowercase
+  & .contact .col-12 hr
+    background-color: $color_gray
+  & .contact .col-12 .copyright
+    font-size: 0.7rem
 // top
 .top-up
   background-color: $color_white
