@@ -89,10 +89,12 @@ window.addEventListener("scroll", function(e) {
   // scroll控制explore
   if (window.scrollY <= 0) {
     explore.classList.add("at_top");
-    logoBrand.src = "../image/logo/logo-black.png";
+    logoBrand.src =
+      "https://github.com/aikwdc00/First-Resume/blob/master/image/logo/logo-black.png?raw=true";
   } else {
     explore.classList.remove("at_top");
-    logoBrand.src = "../image/logo/logo-white.png";
+    logoBrand.src =
+      "https://github.com/aikwdc00/First-Resume/blob/master/image/logo/logo-white.png?raw=true";
   }
   // scroll控制導覽列
   if (window.scrollY > 0) {
