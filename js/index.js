@@ -51,7 +51,8 @@ const collection = {
   projects: [
     {
       name: "Movie List",
-      image: "https://aikwdc00.github.io/image/project/movies/movie.JPG",
+      image:
+        "https://raw.githubusercontent.com/aikwdc00/First-Resume/master/image/project/movies/movie.JPG",
       intro: "List systematization and search",
       describe: "",
       link: "https://aikwdc00.github.io/Movie-List/",
@@ -60,7 +61,8 @@ const collection = {
     },
     {
       name: "who is lucky",
-      image: "https://aikwdc00.github.io/image/project/lottory/lottory.JPG",
+      image:
+        "https://raw.githubusercontent.com/aikwdc00/First-Resume/master/image/project/lottory/lottory.JPG",
       intro: "Can draw who is winner",
       describe: "",
       link: "https://aikwdc00.github.io/Lottery/",
@@ -70,7 +72,7 @@ const collection = {
     {
       name: "yellow cat",
       image:
-        "https://aikwdc00.github.io/image/project/yellow cat/yellow-cat.JPG",
+        "https://raw.githubusercontent.com/aikwdc00/First-Resume/master/image/project/yellow%20cat/yellow-cat.JPG",
       intro: "yellow studio with cat with web design",
       describe: "",
       link: "https://aikwdc00.github.io/yellow-cat/",
@@ -94,10 +96,12 @@ window.addEventListener("scroll", function(e) {
   // scroll控制explore
   if (window.scrollY <= 0) {
     explore.classList.add("at_top");
-    logoBrand.src = "https://aikwdc00.github.io/image/logo/logo-black.png";
+    logoBrand.src =
+      "https://raw.githubusercontent.com/aikwdc00/First-Resume/master/image/logo/logo-black.png";
   } else {
     explore.classList.remove("at_top");
-    logoBrand.src = "https://aikwdc00.github.io/image/logo/logo-white.png";
+    logoBrand.src =
+      "https://raw.githubusercontent.com/aikwdc00/First-Resume/master/image/logo/logo-white.png";
   }
   // scroll控制導覽列
   if (window.scrollY > 0) {
