@@ -13,13 +13,6 @@ const collection = {
       ]
     }
   ],
-  education: [
-    {
-      university: "TC gaming",
-      duration: "2018/09～2019/12",
-      major: "Payment Product Manage"
-    }
-  ],
   icons: [
     {
       name: "git",
@@ -51,7 +44,8 @@ const collection = {
   projects: [
     {
       name: "Movie List",
-      image: "../../image/project/movies/movie.JPG",
+      image:
+        "https://raw.githubusercontent.com/aikwdc00/First-Resume/master/image/project/movies/movie.JPG",
       intro: "List systematization and search",
       describe: "",
       link: "https://aikwdc00.github.io/Movie-List/",
@@ -60,7 +54,8 @@ const collection = {
     },
     {
       name: "who is lucky",
-      image: "../image/project/lottory/lottory.JPG",
+      image:
+        "https://raw.githubusercontent.com/aikwdc00/First-Resume/master/image/project/lottory/lottory.JPG",
       intro: "Can draw who is winner",
       describe: "",
       link: "https://aikwdc00.github.io/Lottery/",
@@ -69,7 +64,8 @@ const collection = {
     },
     {
       name: "yellow cat",
-      image: "../image/project/yellowCat/yellowCat.JPG",
+      image:
+        "https://github.com/aikwdc00/First-Resume/blob/master/image/project/yellowCat/yellowCat.JPG?raw=true",
       intro: "yellow studio with cat with web design",
       describe: "",
       link: "https://aikwdc00.github.io/yellow-cat/",
