@@ -51,7 +51,7 @@ const collection = {
   projects: [
     {
       name: "Movie List",
-      image: "../image/project/movies/movie.JPG",
+      image: "../../image/project/movies/movie.JPG",
       intro: "List systematization and search",
       describe: "",
       link: "https://aikwdc00.github.io/Movie-List/",
@@ -69,7 +69,7 @@ const collection = {
     },
     {
       name: "yellow cat",
-      image: "../image/project/yellow%20cat/yellow-cat.JPG",
+      image: "../image/project/yellowCat/yellowCat.JPG",
       intro: "yellow studio with cat with web design",
       describe: "",
       link: "https://aikwdc00.github.io/yellow-cat/",
@@ -113,9 +113,9 @@ function showInfoIcon() {
   let cell = "";
   collection.icons.forEach(item => {
     cell += `
-            <li class="list-group-item">
-                <a href=${item.link} target="_blank">
-                    <i class="${item.className} ${item.font}"></i>
+            <li class='list-group-item'>
+                <a href=${item.link} target='_blank'>
+                    <i class='${item.className} ${item.font}'></i>
                 </a>
             </li>
         `;
