@@ -45,7 +45,7 @@ const collection = {
     {
       name: "Movie List",
       image:
-        "../image/project/movies/movie.JPG",
+        "image/project/movies/movie.JPG",
       intro: "List systematization and search",
       describe: "",
       link: "https://aikwdc00.github.io/Movie-List/",
@@ -55,7 +55,7 @@ const collection = {
     {
       name: "who is lucky",
       image:
-        "../image/project/lottory/lottory.JPG",
+        "image/project/lottory/lottory.JPG",
       intro: "Can draw who is winner",
       describe: "",
       link: "https://aikwdc00.github.io/Lottery/",
@@ -65,7 +65,7 @@ const collection = {
     {
       name: "yellow cat",
       image:
-        "../image/project/yellowCat/yellowCat.JPG",
+        "image/project/yellowCat/yellowCat.JPG",
       intro: "yellow studio with cat with web design",
       describe: "",
       link: "https://aikwdc00.github.io/yellow-cat/",
